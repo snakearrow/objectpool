@@ -1,5 +1,5 @@
 ## Summary
-objectpool is a Python implementation of an Object Pool. It let's you
+objectpool is a Python implementation for object pools. The library let's you
 - create object pools
 - put arbitrary objects into pools
 - subscribe for new objects
