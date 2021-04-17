@@ -5,8 +5,8 @@ objectpool is a Python implementation for object pools. The library let's you
 - subscribe for new objects
 
 ## Installation
-Currently there is no official release yet. You can build a python wheel by using
-`python3 -m build`
+Currently there is no official release yet. You can build a python wheel by using\
+`python3 -m build`\
 This will create a wheel which can be installed by using pip.
 
 ### Example
