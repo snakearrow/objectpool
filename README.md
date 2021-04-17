@@ -4,10 +4,15 @@ objectpool is a Python implementation for object pools. The library let's you
 - put arbitrary objects into pools
 - subscribe for new objects
 
+## Installation
+Currently there is no official release yet. You can build a python wheel by using
+`python3 -m build`
+This will create a wheel which can be installed by using pip.
+
 ### Example
 ---
 ```Python
-from ObjectPool import *
+from objectpool import ObjectPool
 from MyObject import MyObject
 from AnotherObject import AnotherObject
 
@@ -35,7 +40,7 @@ pool.register_pool("Pool Name 1", fail_if_already_registered=False)
 ---
 Objects which can be put into a pool have to inherit from `GenericObject`:
 ```Python
-from GenericObject import *
+from objectpool import GenericObject
 
 class MyObject(GenericObject):
 
