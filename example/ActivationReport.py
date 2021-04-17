@@ -1,4 +1,4 @@
-from GenericObject import *
+from objectpool import GenericObject
 
 class ActivationReport(GenericObject):
 

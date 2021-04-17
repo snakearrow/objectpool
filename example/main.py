@@ -2,7 +2,7 @@ from MyObject import MyObject
 from AnotherObject import AnotherObject
 from ProgressionReport import ProgressionReport
 from ActivationReport import ActivationReport
-from ObjectPool import *
+from objectpool import ObjectPool
 import threading
 from random import randrange
 import signal
