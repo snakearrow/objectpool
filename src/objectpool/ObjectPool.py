@@ -1,8 +1,8 @@
-from SinglePool import SinglePool, Subscription
-from GenericObject import GenericObject
-from PoolEntry import PoolEntry
-from Exceptions import UnknownPoolException, PoolAlreadyExistsException
-from UI import UI
+from .SinglePool import SinglePool, Subscription
+from .GenericObject import GenericObject
+from .PoolEntry import PoolEntry
+from .Exceptions import UnknownPoolException, PoolAlreadyExistsException
+from .UI import UI
 from dearpygui import core, simple
 import threading
 import psutil
@@ -63,7 +63,7 @@ class ObjectPool:
         
     def get_all(self, pool_name: str):
         if pool_name in self._pools:
-            return self._pools[pool_name].get_all()
+            return self._pools[pool_name].get_queue()
         return None
         
     def subscribe(self, pool_name: str, obj, fnct, args: list = None, filter_func = None, filter_func_args = None):

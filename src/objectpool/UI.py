@@ -1,5 +1,5 @@
 from dearpygui import core, simple
-from DetailsWindow import DetailsWindow
+from .DetailsWindow import DetailsWindow
 import threading
 import psutil
 import os

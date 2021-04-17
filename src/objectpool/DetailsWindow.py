@@ -1,9 +1,10 @@
-from PoolEntry import PoolEntry
+from .PoolEntry import PoolEntry
 from dearpygui import core, simple
 from typing import Callable
 import threading
 from time import sleep
 from timeit import default_timer as timer
+
 
 class DetailsWindow:
 

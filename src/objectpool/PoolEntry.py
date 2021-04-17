@@ -1,5 +1,6 @@
-from GenericObject import GenericObject
+from .GenericObject import GenericObject
 from datetime import datetime
+
 
 class PoolEntry:
 

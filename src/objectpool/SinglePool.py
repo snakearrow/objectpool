@@ -1,5 +1,5 @@
-from GenericObject import GenericObject
-from PoolEntry import PoolEntry
+from .GenericObject import GenericObject
+from .PoolEntry import PoolEntry
 from collections import deque
 import threading
 import sys
