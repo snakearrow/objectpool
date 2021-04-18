@@ -4,10 +4,10 @@ objectpool is a Python implementation for object pools. The library let's you
 - put arbitrary objects into pools
 - subscribe for new objects
 
-Possible uses cases for objectpool are: communication between threads, object storage, object distribution
+Possible use cases for objectpool are: communication between threads, object storage, object distribution
 
 ## Installation
-Currently there is no official release yet. You can build a python wheel by using\
+Currently there is no official release yet. However, you can build a python wheel by using\
 `python3 -m build`\
 This will create a wheel which can be installed by using pip.
 
@@ -39,7 +39,6 @@ pool.register_pool("Pool Name 1", fail_if_already_registered=False)
 ```
 
 #### Put objects into pool
----
 Objects which can be put into a pool have to inherit from `GenericObject`:
 ```Python
 from objectpool import GenericObject
@@ -71,7 +70,6 @@ for i in range(100):
 
 
 #### Subscribe for new objects
----
 You can subscribe for any new object which is put into a pool:
 ```Python
 def handle_myobject(obj: MyObject):
@@ -95,7 +93,6 @@ pool.subscribe("P1", MyObject, handle_myobject, args=["argument 1", 4321], filte
 If a filter function is provided, the function is called on every reception of the specified object. If (and only if) the filter function returns true, the handle function is called.
 
 ### Miscellaneous
----
 Deregister pool:
 ```Python
 pool.deregister_pool("P1")
@@ -124,6 +121,7 @@ pool.show_ui()
 ```
 
 ### Dependencies
+---
 - [psutil](https://github.com/giampaolo/psutil)
 - [dearpygui](https://github.com/hoffstadt/DearPyGui)
 - [pyhash](https://github.com/flier/pyfasthash)
