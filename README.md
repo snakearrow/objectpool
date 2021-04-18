@@ -4,6 +4,8 @@ objectpool is a Python implementation for object pools. The library let's you
 - put arbitrary objects into pools
 - subscribe for new objects
 
+Possible uses cases for objectpool are: communication between threads, object storage, object distribution
+
 ## Installation
 Currently there is no official release yet. You can build a python wheel by using\
 `python3 -m build`\
